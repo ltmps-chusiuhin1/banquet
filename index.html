@@ -342,17 +342,24 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="info-item" style="border:none; padding-bottom:0;">
+                    <!-- 👇 注意這裡：把原本的 style="border:none; padding-bottom:0;" 刪掉 -->
+                    <div class="info-item">
                         <div class="icon">💝</div>
                         <div style="width:100%;">
                             <span style="color:#888; font-size:12px; display:block;">捐款</span>
                             <div class="donation-tier">
-                                <strong>個人：</strong>凡捐款港幣 220 元贈盆菜宴1位及校慶紀念品一份。
+                                <strong>個人：</strong>凡捐款港幣 220 元，可獲邀出席盆菜宴（1席）。
                             </div>
                             <div class="donation-tier" style="margin-top:8px;">
-                                <strong>團體：</strong>凡捐款港幣 2520 元贈盆菜宴1席（共12位）及校慶紀念品12份。
+                                <strong>團體：</strong>凡捐款港幣 2520 元（210元 x 12席），可獲邀出席盆菜宴（1圍12席）。
                             </div>
                         </div>
+                    </div>
+
+                    <!-- 👇 新增在最底部的「截止報名日期」（CSS 會自動隱藏它底部的線） -->
+                    <div class="info-item">
+                        <div class="icon">⏳</div>
+                        <div><span style="color:#888; font-size:12px; display:block;">截止報名日期</span><strong>2026年11月6日 (五)</strong></div>
                     </div>
                 </div>
 
