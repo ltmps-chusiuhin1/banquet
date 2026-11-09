@@ -182,6 +182,14 @@
             display: block; width: 100%; font-weight: bold; box-shadow: 0 6px 15px rgba(212, 175, 55, 0.3); transition: all 0.3s; 
         }
         .btn:active { transform: translateY(2px); box-shadow: 0 2px 5px rgba(212, 175, 55, 0.3); }
+        .btn-disabled {
+            background: #8c9bae !important;
+            color: #ffffff !important;
+            box-shadow: none !important;
+            cursor: not-allowed !important;
+            font-size: 16px !important;
+            pointer-events: none;
+        }
         .btn-add { background: rgba(0, 51, 160, 0.05); color: var(--primary-blue); border: 1.5px dashed var(--primary-blue); margin-top: 12px; box-shadow: none; padding: 12px 20px; font-size: 15px; }
         .btn-add:hover, .btn-add:active { background: rgba(0, 51, 160, 0.1); transform: none; box-shadow: none;}
         .btn-table { background: rgba(212, 175, 55, 0.12); color: var(--gold-dark); border: 1.5px solid var(--gold-main); margin-top: 10px; box-shadow: none; padding: 12px 20px; font-size: 15px; }
@@ -342,7 +350,6 @@
                             </ul>
                         </div>
                     </div>
-                    <!-- 👇 注意這裡：把原本的 style="border:none; padding-bottom:0;" 刪掉 -->
                     <div class="info-item">
                         <div class="icon">💝</div>
                         <div style="width:100%;">
@@ -356,7 +363,6 @@
                         </div>
                     </div>
 
-                    <!-- 👇 新增在最底部的「截止報名日期」（CSS 會自動隱藏它底部的線） -->
                     <div class="info-item">
                         <div class="icon">⏳</div>
                         <div><span style="color:#888; font-size:12px; display:block;">截止報名日期</span><strong>2026年11月6日 (五)</strong></div>
@@ -368,8 +374,9 @@
                 </div>
             </div>
 
+            <!-- 已修改：報名按鈕設為失效並更新文字 -->
             <div class="sticky-bottom">
-                <button class="btn" onclick="switchPage('form-page')">立即填寫報名表</button>
+                <button class="btn btn-disabled" disabled>盆菜宴名額已滿，感謝各界熱烈支持。</button>
             </div>
         </div>
 
